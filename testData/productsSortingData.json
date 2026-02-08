@@ -1,0 +1,26 @@
+[
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "sortBy": "lohi",
+    "clearSort": "Price (Low to High)"
+  },
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "sortBy": "hilo",
+    "clearSort": "Price (High to Low)"
+  },
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "sortBy": "az",
+    "clearSort": "Name A-Z"
+  },
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "sortBy": "za",
+    "clearSort": "Name Z-A"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "first-playright-project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Dennis",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.2.0"
+  }
+}

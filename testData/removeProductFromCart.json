@@ -1,0 +1,16 @@
+[
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "productName": "Sauce Labs Backpack",
+    "productPrice": "$29.99",
+    "quantity": 1
+  },
+  {
+    "username": "visual_user",
+    "password": "secret_sauce",
+    "productName": "Sauce Labs Bike Light",
+    "productPrice": "$9.99",
+    "quantity": 1
+  }
+]
