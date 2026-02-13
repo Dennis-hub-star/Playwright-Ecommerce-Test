@@ -14,7 +14,7 @@ for (const data of productsSortingData) {
     const productsPage = pageObjectManager.getProductsPage();
     await productsPage.resetAppState();
     await productsPage.sortItemsBy(data.sortBy);
-    
+
     // Verify based on the sort type
     if (data.sortBy.includes("lohi") || data.sortBy.includes("hilo")) {
       await productsPage.verifyPriceSorting();
@@ -23,36 +23,3 @@ for (const data of productsSortingData) {
     }
   });
 }
-// test("Price Sorting In Ascending Order Tests", async ({ page }) => {
-//   const pageObjectManager = new PageObjectManager(page, expect);
-//   const loginPage = pageObjectManager.getLoginPage();
-//   await loginPage.goTo("https://www.saucedemo.com/");
-//   await loginPage.loginWithValidCredentials("standard_user", "secret_sauce");
-//   const productsPage = pageObjectManager.getProductsPage();
-//   await productsPage.resetAppState();
-//   await productsPage.sortItemsBy("hilo");
-//   await productsPage.verifyPriceSorting();
-//   // await productsPage.verifyNameSorting();
-// });
-// test("Products Names Sorting(A-Z) Tests", async ({ page }) => {
-//   const pageObjectManager = new PageObjectManager(page, expect);
-//   const loginPage = pageObjectManager.getLoginPage();
-//   await loginPage.goTo("https://www.saucedemo.com/");
-//   await loginPage.loginWithValidCredentials("standard_user", "secret_sauce");
-//   const productsPage = pageObjectManager.getProductsPage();
-//   await productsPage.resetAppState();
-//   await productsPage.sortItemsBy("az");
-//   await productsPage.verifyNameSorting();
-//   // await productsPage.verifyNameSorting();
-// });
-// test("Products Names Sorting(Z-A) Tests", async ({ page }) => {
-//   const pageObjectManager = new PageObjectManager(page, expect);
-//   const loginPage = pageObjectManager.getLoginPage();
-//   await loginPage.goTo("https://www.saucedemo.com/");
-//   await loginPage.loginWithValidCredentials("standard_user", "secret_sauce");
-//   const productsPage = pageObjectManager.getProductsPage();
-//   await productsPage.resetAppState();
-//   await productsPage.sortItemsBy("za");
-//   await productsPage.verifyNameSorting();
-//   // await productsPage.verifyNameSorting();
-// });

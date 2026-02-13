@@ -12,7 +12,7 @@ class PageObjectManager {
   }
 
   getLoginPage() {
-    return new LoginPage(this.page);
+    return new LoginPage(this.page, this.expect);
   }
 
   getProductsPage() {

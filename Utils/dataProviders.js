@@ -22,6 +22,14 @@ class DataProviders {
     const productsSortingData = utilities.getTestData();
     return productsSortingData;
   }
+
+  getNegativeLoginData() {
+    const utilities = new Utilities(
+      "../testData/negativeTestData/negativeLogin.json",
+    );
+    const negativeLoginData = utilities.getTestData();
+    return negativeLoginData;
+  }
 }
 
 export { DataProviders };

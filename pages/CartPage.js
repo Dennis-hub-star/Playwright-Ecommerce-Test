@@ -45,5 +45,13 @@ class CartPage {
   async gotoCheckoutPage() {
     await this.page.getByRole("button", { name: "Checkout" }).click();
   }
+
+  async confirmCartIsEmpty() {
+    await this.expect(this.cartItems).toBeHidden();
+  }
+
+  async confirmPageUrlNotChanged(expectedUrl) {
+    await this.expect(this.page).toHaveURL(expectedUrl);
+  }
 }
 export { CartPage };
